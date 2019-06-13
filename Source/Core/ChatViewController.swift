@@ -105,21 +105,21 @@ open class ChatViewController: UIViewController, UITableViewDataSource, UITableV
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-        }
-        customKeyboardHeight = Utils.shared.getCacheKeyboardHeight()
-
-        setupSubviews()
-        observerKeyboardEvents()
+//        view.backgroundColor = .white
+//        if #available(iOS 11.0, *) {
+//            tableView.contentInsetAdjustmentBehavior = .never
+//        }
+//        customKeyboardHeight = Utils.shared.getCacheKeyboardHeight()
+//
+//        setupSubviews()
+//        observerKeyboardEvents()
     }
 
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        imagePickerHeightContraint?.constant = customKeyboardHeight
-        imagePickerView?.collectionView.updateUI()
+//        imagePickerHeightContraint?.constant = customKeyboardHeight
+        //imagePickerView?.collectionView.updateUI()
     }
 
     open func setupSubviews() {
