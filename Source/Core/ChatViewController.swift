@@ -118,8 +118,8 @@ open class ChatViewController: UIViewController, UITableViewDataSource, UITableV
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-//        imagePickerHeightContraint?.constant = customKeyboardHeight
-        //imagePickerView?.collectionView.updateUI()
+        imagePickerHeightContraint?.constant = customKeyboardHeight
+        imagePickerView?.collectionView.updateUI()
     }
 
     open func setupSubviews() {

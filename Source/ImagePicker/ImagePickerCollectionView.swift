@@ -83,9 +83,12 @@ public final class ImagePickerCollectionView: UICollectionView {
         createPhotoManager()
     }
 
-    fileprivate func createPhotoManager() {
+    private func createPhotoManager() {
+        let requestOptions = PHImageRequestOptions()
+        requestOptions.isNetworkAccessAllowed = true
+        requestOptions.deliveryMode = .fastFormat
         let options = PhotoDataManagerOptions(contentMode: .aspectFill,
-                                              requestOption: nil,
+                                              requestOption: requestOptions,
                                               preloadLength: 5)
         photoDataManager = PhotoDataManager(with: options, delegate: self)
     }
