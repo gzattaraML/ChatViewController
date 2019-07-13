@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.resource_bundles = {'ChatViewController' => ['Source/Resources/**/*.{png,xcassets,xib}']}
 
   s.ios.frameworks = 'UIKit', 'Foundation'
-  s.dependency 'PlaceholderUITextView'
+  s.dependency 'PlaceholderUITextView', '= 1.1.0'
 
 end
